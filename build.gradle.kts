@@ -3,11 +3,18 @@ plugins {
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
 	id("java")
 
-    id("org.openrewrite.rewrite") version "4.0.0" apply false
+    id("nebula.release") version "15.3.1"
+
+	id("nebula.info") version "9.3.0"
+    id("nebula.javadoc-jar") version "17.3.2"
+    id("nebula.source-jar") version "17.3.2"
+    id("nebula.maven-apache-license") version "17.3.2"
+
+    id("org.openrewrite.rewrite") version "4.0.0"
 }
 
 group = "io.slugstack.oss"
-version = "0.0.1-SNAPSHOT"
+description = "for random testing with gradle-based projects"
 
 repositories {
 	mavenCentral()
