@@ -52,5 +52,6 @@ tasks.named<Test>("test") {
 }
 
 configure<org.openrewrite.gradle.RewriteExtension> {
-    activeRecipe("org.openrewrite.java.format.AutoFormat")
+    // activeRecipe("org.openrewrite.java.format.AutoFormat")
+    activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
 }
