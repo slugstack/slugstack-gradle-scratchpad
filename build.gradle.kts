@@ -26,6 +26,9 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    // for testing third-party recipe consumption
+    compileOnly("org.openrewrite.recipe:rewrite-testing-frameworks:1.1.0")
 }
 
 configure<nebula.plugin.release.git.base.ReleasePluginExtension> {
