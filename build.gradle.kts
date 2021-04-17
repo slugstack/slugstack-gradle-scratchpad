@@ -6,7 +6,6 @@ plugins {
 
 group = "io.slugstack.oss"
 version = "0.0.1-SNAPSHOT"
-sourceCompatibility = "11"
 
 repositories {
 	mavenCentral()
@@ -17,6 +16,18 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
-test {
-	useJUnitPlatform()
+tasks.named<JavaCompile>("compileJava") {
+    sourceCompatibility = JavaVersion.VERSION_1_8.toString()
+    targetCompatibility = JavaVersion.VERSION_1_8.toString()
+
+    options.isFork = true
+    options.forkOptions.executable = "javac"
+    options.compilerArgs.addAll(listOf("--release", "8"))
+    options.encoding = "UTF-8"
+    options.compilerArgs.add("-parameters")
+}
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
+    jvmArgs = listOf("-XX:+UnlockDiagnosticVMOptions", "-XX:+ShowHiddenFrames")
 }
