@@ -17,6 +17,7 @@ group = "io.slugstack.oss"
 description = "for random testing with gradle-based projects"
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven {
         url = uri("https://oss.sonatype.org/content/repositories/snapshots")
@@ -24,11 +25,22 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    // implementation("org.springframework.boot:spring-boot-starter")
+    // testImplementation("org.springframework.boot:spring-boot-starter-test")
 
     // for testing third-party recipe consumption
     compileOnly("org.openrewrite.recipe:rewrite-testing-frameworks:1.1.0")
+    // implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.1.0")
+
+    // when only compileOnly you maybe don't get recipes on the test sourceSet?
+    // * What went wrong:
+    // Execution failed for task ':rewriteRunTest'.
+    // > org.openrewrite.RecipeException: Recipes not found: org.openrewrite.java.testing.junit5.JUnit5BestPractices
+}
+
+configure<org.openrewrite.gradle.RewriteExtension> {
+    // activeRecipe("org.openrewrite.java.format.AutoFormat")
+    activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
 }
 
 configure<nebula.plugin.release.git.base.ReleasePluginExtension> {
@@ -46,12 +58,7 @@ tasks.named<JavaCompile>("compileJava") {
     options.compilerArgs.add("-parameters")
 }
 
-tasks.named<Test>("test") {
-    useJUnitPlatform()
-    jvmArgs = listOf("-XX:+UnlockDiagnosticVMOptions", "-XX:+ShowHiddenFrames")
-}
-
-configure<org.openrewrite.gradle.RewriteExtension> {
-    // activeRecipe("org.openrewrite.java.format.AutoFormat")
-    activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
-}
+// tasks.named<Test>("test") {
+//     useJUnitPlatform()
+//     jvmArgs = listOf("-XX:+UnlockDiagnosticVMOptions", "-XX:+ShowHiddenFrames")
+// }
