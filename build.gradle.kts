@@ -1,6 +1,6 @@
 plugins {
     id("org.springframework.boot") version "2.4.5"
-    id("io.spring.dependency-management") version "1.0.11.RELEASE"
+    // id("io.spring.dependency-management") version "1.0.11.RELEASE"
     id("java")
 
     id("nebula.release") version "15.3.1"
@@ -29,8 +29,8 @@ dependencies {
     // testImplementation("org.springframework.boot:spring-boot-starter-test")
 
     // for testing third-party recipe consumption
-    compileOnly("org.openrewrite.recipe:rewrite-testing-frameworks:1.1.0")
     // implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.1.0")
+    implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.2.0-SNAPSHOT")
 
     // when only compileOnly you maybe don't get recipes on the test sourceSet?
     // * What went wrong:
@@ -61,4 +61,12 @@ tasks.named<JavaCompile>("compileJava") {
 // tasks.named<Test>("test") {
 //     useJUnitPlatform()
 //     jvmArgs = listOf("-XX:+UnlockDiagnosticVMOptions", "-XX:+ShowHiddenFrames")
+// }
+
+// // https://docs.gradle.org/current/userguide/dependency_management.html#sec:defining-custom-configurations
+// tasks.register("list") {
+//     dependsOn(configurations["compileClasspath"])
+//     doLast {
+//         println("classpath = ${configurations["compileClasspath"].map { file: File -> file.name }}")
+//     }
 // }
