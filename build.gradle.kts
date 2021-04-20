@@ -1,3 +1,15 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+    }
+
+    dependencies {
+        // classpath("io.slugstack.oss:slugstack-publishing-plugin:latest.release")
+        classpath("org.openrewrite:plugin:4.1.0-SNAPSHOT")
+    }
+}
+
 plugins {
     // id("org.springframework.boot") version "2.4.5"
     // id("io.spring.dependency-management") version "1.0.11.RELEASE"
@@ -10,8 +22,10 @@ plugins {
     id("nebula.source-jar") version "17.3.2"
     id("nebula.maven-apache-license") version "17.3.2"
 
-    id("org.openrewrite.rewrite") version "4.0.0"
+    // id("org.openrewrite.rewrite") version "4.0.0"
 }
+
+apply(plugin = "org.openrewrite.rewrite")
 
 group = "io.slugstack.oss"
 description = "for random testing with gradle-based projects"
