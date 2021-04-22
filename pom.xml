@@ -32,31 +32,42 @@
     <build>
         <plugins>
             <plugin>
+                <!--
+                    ./mvnw org.sonarsource.scanner.maven:sonar-maven-plugin:help
+                -->
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.8.0.2131</version>
             </plugin>
             <plugin>
+                <!--
+                    ./mvnw io.spring.javaformat:spring-javaformat-maven-plugin:help
+                    ./mvnw io.spring.javaformat:spring-javaformat-maven-plugin:apply
+                -->
+                <groupId>io.spring.javaformat</groupId>
+                <artifactId>spring-javaformat-maven-plugin</artifactId>
+                <version>0.0.27</version>
+            </plugin>
+            <plugin>
+                <!--
+                    ./mvnw rewrite:help
+                    ./mvnw org.openrewrite.maven:rewrite-maven-plugin:help
+                -->
                 <groupId>org.openrewrite.maven</groupId>
                 <artifactId>rewrite-maven-plugin</artifactId>
-                <version>4.1.0</version>
+                <version>4.1.1</version>
                 <!-- <version>4.1.0-SNAPSHOT</version> -->
                 <configuration>
                     <activeRecipes>
-                        <!-- <recipe>org.openrewrite.java.format.AutoFormat</recipe> -->
+                        <recipe>org.openrewrite.java.format.AutoFormat</recipe>
                         <recipe>org.openrewrite.java.testing.junit5.JUnit5BestPractices</recipe>
-
-                        <!-- these two recipes are having issues in gradle land -->
-                        <!-- <recipe>org.openrewrite.java.testing.junit5.RunnerToExtension</recipe> -->
-                        <!-- <recipe>org.openrewrite.java.testing.junit5.RemoveObsoleteRunners</recipe> -->
                     </activeRecipes>
                 </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>org.openrewrite.recipe</groupId>
                         <artifactId>rewrite-testing-frameworks</artifactId>
-                        <!-- <version>1.1.0</version> -->
-                        <version>1.2.0</version>
+                        <version>1.2.1</version>
                     </dependency>
                 </dependencies>
             </plugin>
