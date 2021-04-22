@@ -216,6 +216,18 @@
         <plugins>
             <plugin>
                 <!--
+                    https://spotbugs.github.io/spotbugs-maven-plugin/usage.html
+
+                    ./mvnw com.github.spotbugs:spotbugs-maven-plugin:help
+                    ./mvnw com.github.spotbugs:spotbugs-maven-plugin:check
+                -->
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
+                <version>4.2.3</version>
+            </plugin>
+
+            <plugin>
+                <!--
                     ./mvnw pl.project13.maven:git-commit-id-plugin:validateRevision
                     ./mvnw pl.project13.maven:git-commit-id-plugin:revision
                 -->
