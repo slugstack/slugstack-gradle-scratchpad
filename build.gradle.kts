@@ -44,7 +44,7 @@ dependencies {
 
     // for testing third-party recipe consumption
     // implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.1.0")
-    implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.2.0-SNAPSHOT")
+    implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.2.0")
 
     // when only compileOnly you maybe don't get recipes on the test sourceSet?
     // * What went wrong:
