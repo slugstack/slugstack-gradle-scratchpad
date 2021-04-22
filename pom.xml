@@ -34,6 +34,9 @@
     <!--
         ./mvnw dependency:tree
         ./mvnw dependency:analyze
+
+        another interesting example? archetype generation:
+        mvn archetype:generate
     -->
 
 
