@@ -39,7 +39,7 @@
             <plugin>
                 <groupId>org.openrewrite.maven</groupId>
                 <artifactId>rewrite-maven-plugin</artifactId>
-                <version>4.1.0-SNAPSHOT</version>
+                <version>4.1.0</version>
                 <!-- <version>4.1.0-SNAPSHOT</version> -->
                 <configuration>
                     <activeRecipes>
