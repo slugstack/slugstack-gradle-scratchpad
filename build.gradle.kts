@@ -5,10 +5,8 @@ buildscript {
     }
 
     dependencies {
-        // classpath("io.slugstack.oss:slugstack-publishing-plugin:latest.release")
-        // classpath("org.openrewrite:plugin:4.3.0-SNAPSHOT")
+        // classpath("org.openrewrite:plugin:4.2.0")
         classpath("org.openrewrite:plugin:4.3.0-SNAPSHOT")
-        // classpath("org.openrewrite:plugin:4.1.0")
     }
 }
 
@@ -24,7 +22,7 @@ plugins {
     id("nebula.source-jar") version "17.3.2"
     id("nebula.maven-apache-license") version "17.3.2"
 
-    // id("org.openrewrite.rewrite") version "4.1.0"
+    // id("org.openrewrite.rewrite") version "4.2.0"
 }
 
 apply(plugin = "org.openrewrite.rewrite")
@@ -44,22 +42,21 @@ dependencies {
     // implementation("org.springframework.boot:spring-boot-starter")
     // testImplementation("org.springframework.boot:spring-boot-starter-test")
 
-    // for testing third-party recipe consumption
-    // implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.1.0")
-    implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.2.0")
-
-    // when only compileOnly you maybe don't get recipes on the test sourceSet?
-    // * What went wrong:
-    // Execution failed for task ':rewriteRunTest'.
-    // > org.openrewrite.RecipeException: Recipes not found: org.openrewrite.java.testing.junit5.JUnit5BestPractices
+    rewrite("org.openrewrite.recipe:rewrite-testing-frameworks:1.3.0")
 }
 
 configure<org.openrewrite.gradle.RewriteExtension> {
-    // activeRecipe("org.openrewrite.java.format.AutoFormat")
+    activeRecipe("org.openrewrite.java.format.AutoFormat")
     activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
     // setFailOnInvalidActiveRecipes(false)
     // setInteractive(true)
+    setFailOnDryRunResults(true)
 }
+// rewrite {
+//     activeRecipe("org.openrewrite.java.format.AutoFormat")
+//     // activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
+//     // setFailOnDryRunResults(true)
+// }
 
 configure<nebula.plugin.release.git.base.ReleasePluginExtension> {
     defaultVersionStrategy = nebula.plugin.release.NetflixOssStrategies.SNAPSHOT(project)

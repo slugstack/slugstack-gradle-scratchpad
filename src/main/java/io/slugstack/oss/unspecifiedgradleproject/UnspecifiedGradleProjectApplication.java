@@ -6,6 +6,26 @@ package io.slugstack.oss.unspecifiedgradleproject;
 // @SpringBootApplication
 public class UnspecifiedGradleProjectApplication {
 
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+
+
 	public static void main(String[] args) {
 		// SpringApplication.run(UnspecifiedGradleProjectApplication.class, args);
 	}
