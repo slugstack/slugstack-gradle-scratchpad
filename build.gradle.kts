@@ -6,7 +6,7 @@ buildscript {
 
     dependencies {
         // classpath("io.slugstack.oss:slugstack-publishing-plugin:latest.release")
-        classpath("org.openrewrite:plugin:4.2.0-SNAPSHOT")
+        classpath("org.openrewrite:plugin:4.3.0-SNAPSHOT")
         // classpath("org.openrewrite:plugin:4.1.0")
     }
 }
