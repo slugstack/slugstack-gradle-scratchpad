@@ -56,7 +56,7 @@ dependencies {
 configure<org.openrewrite.gradle.RewriteExtension> {
     // activeRecipe("org.openrewrite.java.format.AutoFormat")
     activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
-    setFailOnInvalidActiveRecipes(true)
+    setFailOnInvalidActiveRecipes(false)
 }
 
 configure<nebula.plugin.release.git.base.ReleasePluginExtension> {
