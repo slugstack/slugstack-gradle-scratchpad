@@ -42,7 +42,8 @@ dependencies {
     // implementation("org.springframework.boot:spring-boot-starter")
     // testImplementation("org.springframework.boot:spring-boot-starter-test")
 
-    rewrite("org.openrewrite.recipe:rewrite-testing-frameworks:1.3.0")
+    // rewrite("org.openrewrite.recipe:rewrite-testing-frameworks:1.3.0")
+    implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.3.0")
 }
 
 configure<org.openrewrite.gradle.RewriteExtension> {
@@ -50,7 +51,7 @@ configure<org.openrewrite.gradle.RewriteExtension> {
     activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
     // setFailOnInvalidActiveRecipes(false)
     // setInteractive(true)
-    setFailOnDryRunResults(true)
+    // setFailOnDryRunResults(true)
 }
 // rewrite {
 //     activeRecipe("org.openrewrite.java.format.AutoFormat")
