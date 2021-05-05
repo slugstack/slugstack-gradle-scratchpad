@@ -6,8 +6,8 @@ buildscript {
 
     dependencies {
         // classpath("io.slugstack.oss:slugstack-publishing-plugin:latest.release")
-        // classpath("org.openrewrite:plugin:4.1.0-SNAPSHOT")
-        classpath("org.openrewrite:plugin:4.1.0")
+        classpath("org.openrewrite:plugin:4.2.0-SNAPSHOT")
+        // classpath("org.openrewrite:plugin:4.1.0")
     }
 }
 
@@ -56,6 +56,7 @@ dependencies {
 configure<org.openrewrite.gradle.RewriteExtension> {
     // activeRecipe("org.openrewrite.java.format.AutoFormat")
     activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
+    setFailOnInvalidActiveRecipes(true)
 }
 
 configure<nebula.plugin.release.git.base.ReleasePluginExtension> {
