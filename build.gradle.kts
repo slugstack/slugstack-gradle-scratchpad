@@ -6,7 +6,7 @@ buildscript {
 
     dependencies {
         // classpath("org.openrewrite:plugin:4.2.0")
-        // classpath("org.openrewrite:plugin:4.3.0-SNAPSHOT")
+        classpath("org.openrewrite:plugin:4.3.0-SNAPSHOT")
     }
 }
 
@@ -22,10 +22,10 @@ plugins {
     id("nebula.source-jar") version "17.3.2"
     id("nebula.maven-apache-license") version "17.3.2"
 
-    id("org.openrewrite.rewrite") version "4.2.1"
+    // id("org.openrewrite.rewrite") version "4.2.1"
 }
 
-// apply(plugin = "org.openrewrite.rewrite")
+apply(plugin = "org.openrewrite.rewrite")
 
 group = "io.slugstack.oss"
 description = "for random testing with gradle-based projects"
@@ -46,18 +46,18 @@ dependencies {
     implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.3.0")
 }
 
-// configure<org.openrewrite.gradle.RewriteExtension> {
-//     activeRecipe("org.openrewrite.java.format.AutoFormat")
-//     activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
-//     // setFailOnInvalidActiveRecipes(false)
-//     // setInteractive(true)
-//     // setFailOnDryRunResults(true)
-// }
-rewrite {
+configure<org.openrewrite.gradle.RewriteExtension> {
     activeRecipe("org.openrewrite.java.format.AutoFormat")
     activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
-    failOnDryRunResults = false
+    // setFailOnInvalidActiveRecipes(false)
+    // setFailOnDryRunResults(true)
 }
+
+// rewrite {
+//     activeRecipe("org.openrewrite.java.format.AutoFormat")
+//     activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
+//     failOnDryRunResults = false
+// }
 
 configure<nebula.plugin.release.git.base.ReleasePluginExtension> {
     defaultVersionStrategy = nebula.plugin.release.NetflixOssStrategies.SNAPSHOT(project)
