@@ -6,8 +6,8 @@ package io.slugstack.oss.unspecifiedgradleproject;
 // @SpringBootTest
 class UnspecifiedGradleProjectApplicationTests {
 
-	// @Test
+// @Test
 	void contextLoads() {
-	}
+    }
 
 }
