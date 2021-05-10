@@ -51,6 +51,7 @@ configure<org.openrewrite.gradle.RewriteExtension> {
     activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
     // setFailOnInvalidActiveRecipes(false)
     // setFailOnDryRunResults(true)
+    setDoDryRunOnCheck(true) // testing
 }
 
 // rewrite {
