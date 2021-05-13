@@ -6,6 +6,12 @@
 #     # ignoreIfAnnotatedBy: []
 #       # - '@java.lang.SuppressWarnings("checkstyle:HideUtilityClassConstructor")'
 ---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.example.cleanup
+recipeList:
+  - org.openrewrite.java.OrderImports:
+      removeUnused: false
+---
 type: specs.openrewrite.org/v1beta/style
 name: io.moderne.spring.style
 styleConfigs:
