@@ -45,7 +45,8 @@
                     </activeRecipes>
 
                     <activeStyles>
-                        <style>com.example.cleanup.HideUtilityClassConstructorSuppression</style>
+                        <!-- <style>com.example.cleanup.HideUtilityClassConstructorSuppression</style> -->
+                        <style>io.moderne.spring.style</style>
                     </activeStyles>
 
                     <!-- <failOnInvalidActiveRecipes>true</failOnInvalidActiveRecipes> -->
