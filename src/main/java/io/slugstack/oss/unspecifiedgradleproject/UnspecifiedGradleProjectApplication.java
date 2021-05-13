@@ -4,6 +4,7 @@ package io.slugstack.oss.unspecifiedgradleproject;
 // import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 // @SpringBootApplication
+@lombok.Data
 public class UnspecifiedGradleProjectApplication {
 
 
