@@ -3,5 +3,6 @@ type: specs.openrewrite.org/v1beta/style
 name: com.example.cleanup.HideUtilityClassConstructorSuppression
 styleConfigs:
   org.openrewrite.java.cleanup.HideUtilityClassConstructorStyle:
-    ignoreIfAnnotatedBy:
-      - '@java.lang.SuppressWarnings("checkstyle:HideUtilityClassConstructor")'
+    {}
+    # ignoreIfAnnotatedBy: []
+      # - '@java.lang.SuppressWarnings("checkstyle:HideUtilityClassConstructor")'
