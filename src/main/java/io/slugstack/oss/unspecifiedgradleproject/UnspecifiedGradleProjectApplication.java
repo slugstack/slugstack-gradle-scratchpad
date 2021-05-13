@@ -4,7 +4,7 @@ package io.slugstack.oss.unspecifiedgradleproject;
 // import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 // @SpringBootApplication
-@lombok.Data
+// @lombok.Data
 // @java.lang.SuppressWarnings("checkstyle:HideUtilityClassConstructor")
 @SuppressWarnings("checkstyle:HideUtilityClassConstructor")
 public class UnspecifiedGradleProjectApplication {
