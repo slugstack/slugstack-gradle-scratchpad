@@ -7,7 +7,7 @@ package io.slugstack.oss.unspecifiedgradleproject;
 class UnspecifiedGradleProjectApplicationTests {
 
     // @Test
-	void contextLoads() {
+    void contextLoads() {
     }
 
 }
