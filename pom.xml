@@ -47,18 +47,18 @@
                 <configuration>
 
                     <activeRecipes>
-                        <!-- <recipe>org.openrewrite.java.cleanup.HideUtilityClassConstructor</recipe> -->
+                        <recipe>org.openrewrite.java.cleanup.HideUtilityClassConstructor</recipe>
                         <!-- <recipe>org.openrewrite.java.OrderImports</recipe> -->
                         <!-- <recipe>org.openrewrite.java.cleanup.DefaultComesLast</recipe> -->
-                        <recipe>com.example.cleanup</recipe>
+                        <!-- <recipe>com.example.cleanup</recipe> -->
 
                         <!-- <recipe>org.openrewrite.java.format.AutoFormat</recipe> -->
                         <!-- <recipe>org.openrewrite.java.testing.junit5.JUnit5BestPractices</recipe> -->
                     </activeRecipes>
 
                     <activeStyles>
-                        <!-- <style>com.example.cleanup.HideUtilityClassConstructorSuppression</style> -->
-                        <style>io.moderne.spring.style</style>
+                        <style>com.example.cleanup.HideUtilityClassConstructorSuppression</style>
+                        <!-- <style>io.moderne.spring.style</style> -->
                     </activeStyles>
 
                     <!-- <failOnInvalidActiveRecipes>true</failOnInvalidActiveRecipes> -->
