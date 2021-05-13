@@ -26,7 +26,7 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
             <version>1.18.20</version>
-          </dependency>
+        </dependency>
     </dependencies>
 
     <build>
@@ -43,6 +43,10 @@
                         <!-- <recipe>org.openrewrite.java.format.AutoFormat</recipe>
                         <recipe>org.openrewrite.java.testing.junit5.JUnit5BestPractices</recipe> -->
                     </activeRecipes>
+
+                    <activeStyles>
+                        <style>com.example.cleanup.HideUtilityClassConstructorSuppression</style>
+                    </activeStyles>
 
                     <!-- <failOnInvalidActiveRecipes>true</failOnInvalidActiveRecipes> -->
                     <!-- <failOnDryRunResults>true</failOnDryRunResults> -->
