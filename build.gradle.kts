@@ -5,7 +5,6 @@ buildscript {
     }
 
     dependencies {
-        // classpath("org.openrewrite:plugin:4.2.0")
         classpath("org.openrewrite:plugin:4.3.0-SNAPSHOT")
     }
 }
@@ -32,9 +31,7 @@ description = "For random testing with maven and gradle-based projects"
 
 repositories {
     mavenLocal()
-    maven {
-        url = uri("https://oss.sonatype.org/content/repositories/snapshots")
-    }
+    maven { url = uri("https://oss.sonatype.org/content/repositories/snapshots") }
     mavenCentral()
 }
 
@@ -49,9 +46,9 @@ dependencies {
 configure<org.openrewrite.gradle.RewriteExtension> {
     activeRecipe("org.openrewrite.java.format.AutoFormat")
     activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
-    // setFailOnInvalidActiveRecipes(false)
+    // setFailOnInvalidActiveRecipes(true)
     // setFailOnDryRunResults(true)
-    setDoDryRunOnCheck(true) // testing
+    // setDoDryRunOnCheck(true)
 }
 
 // rewrite {
@@ -78,12 +75,4 @@ tasks.named<JavaCompile>("compileJava") {
 // tasks.named<Test>("test") {
 //     useJUnitPlatform()
 //     jvmArgs = listOf("-XX:+UnlockDiagnosticVMOptions", "-XX:+ShowHiddenFrames")
-// }
-
-// // https://docs.gradle.org/current/userguide/dependency_management.html#sec:defining-custom-configurations
-// tasks.register("list") {
-//     dependsOn(configurations["compileClasspath"])
-//     doLast {
-//         println("classpath = ${configurations["compileClasspath"].map { file: File -> file.name }}")
-//     }
 // }

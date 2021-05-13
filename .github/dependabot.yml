@@ -13,3 +13,9 @@ updates:
       interval: daily
     commit-message:
       prefix: "chore(ci)"
+  - package-ecosystem: maven
+    directory: /
+    schedule:
+      interval: daily
+    commit-message:
+      prefix: "chore(ci)"
