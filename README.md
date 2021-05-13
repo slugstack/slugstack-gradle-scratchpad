@@ -1,3 +1,3 @@
-# slugstack-unspecified-gradle-project
+# slugstack-rewrite-recipe-scratchpad
 
-For random testing with gradle-based projects
+For random testing with maven and gradle-based projects
