@@ -5,6 +5,7 @@ package io.slugstack.oss.unspecifiedgradleproject;
 
 // @SpringBootApplication
 @lombok.Data
+@java.lang.SuppressWarnings("checkstyle:HideUtilityClassConstructor")
 public class UnspecifiedGradleProjectApplication {
 
 
