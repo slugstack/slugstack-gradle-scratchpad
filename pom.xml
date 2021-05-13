@@ -47,9 +47,10 @@
                 <configuration>
 
                     <activeRecipes>
-                        <!-- <recipe>org.openrewrite.java.cleanup.HideUtilityClassConstructor</recipe> -->
-                        <recipe>org.openrewrite.java.cleanup.Cleanup</recipe>
-                        <!-- <recipe>org.openrewrite.java.OrderImports</recipe> -->
+                        <recipe>org.openrewrite.java.cleanup.HideUtilityClassConstructor</recipe>
+                        <!-- <recipe>org.openrewrite.java.cleanup.Cleanup</recipe> -->
+
+
                         <!-- <recipe>org.openrewrite.java.cleanup.DefaultComesLast</recipe> -->
                         <!-- <recipe>com.example.cleanup</recipe> -->
 
@@ -58,7 +59,7 @@
                     </activeRecipes>
 
                     <activeStyles>
-                        <style>com.example.cleanup.HideUtilityClassConstructorSuppression</style>
+                        <!-- <style>com.example.cleanup.HideUtilityClassConstructorSuppression</style> -->
                         <!-- <style>io.moderne.spring.style</style> -->
                     </activeStyles>
 
