@@ -28,14 +28,14 @@ plugins {
 apply(plugin = "org.openrewrite.rewrite")
 
 group = "io.slugstack.oss"
-description = "for random testing with gradle-based projects"
+description = "For random testing with maven and gradle-based projects"
 
 repositories {
     mavenLocal()
-    mavenCentral()
     maven {
         url = uri("https://oss.sonatype.org/content/repositories/snapshots")
     }
+    mavenCentral()
 }
 
 dependencies {

@@ -9,9 +9,9 @@
     </parent> -->
 
     <groupId>io.slugstack.oss</groupId>
-    <artifactId>unspecified-gradle-project</artifactId>
+    <artifactId>slugstack-rewrite-recipe-scratchpad</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>unspecified-gradle-project</name>
+    <name>slugstack-rewrite-recipe-scratchpad</name>
 
     <properties>
         <java.version>11</java.version>

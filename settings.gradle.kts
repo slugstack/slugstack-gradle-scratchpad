@@ -1,4 +1,4 @@
-rootProject.name = "unspecified-gradle-project"
+rootProject.name = "slugstack-rewrite-recipe-scratchpad"
 
 pluginManagement {
     repositories {
