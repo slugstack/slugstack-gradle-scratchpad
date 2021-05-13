@@ -13,12 +13,14 @@ buildscript {
 plugins {
     id("org.springframework.boot") version "2.4.5"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
+
     id("java")
     id("nebula.release") version "15.3.1"
     id("nebula.info") version "9.3.0"
     id("nebula.javadoc-jar") version "17.3.2"
     id("nebula.source-jar") version "17.3.2"
     id("nebula.maven-apache-license") version "17.3.2"
+
     // id("org.openrewrite.rewrite") version "4.2.1"
 }
 apply(plugin = "org.openrewrite.rewrite")
@@ -33,8 +35,8 @@ repositories {
 }
 
 dependencies {
-    // implementation("org.springframework.boot:spring-boot-starter")
-    // testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation("org.springframework.boot:spring-boot-starter")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 
     // rewrite("org.openrewrite.recipe:rewrite-testing-frameworks:1.4.0")
     implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.4.0")
