@@ -5,25 +5,22 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.openrewrite:plugin:4.3.0-SNAPSHOT")
+        // classpath("org.openrewrite:plugin:4.3.0-SNAPSHOT")
+        classpath("org.openrewrite:plugin:latest.integration")
     }
 }
 
 plugins {
-    // id("org.springframework.boot") version "2.4.5"
-    // id("io.spring.dependency-management") version "1.0.11.RELEASE"
+    id("org.springframework.boot") version "2.4.5"
+    id("io.spring.dependency-management") version "1.0.11.RELEASE"
     id("java")
-
     id("nebula.release") version "15.3.1"
-
     id("nebula.info") version "9.3.0"
     id("nebula.javadoc-jar") version "17.3.2"
     id("nebula.source-jar") version "17.3.2"
     id("nebula.maven-apache-license") version "17.3.2"
-
     // id("org.openrewrite.rewrite") version "4.2.1"
 }
-
 apply(plugin = "org.openrewrite.rewrite")
 
 group = "io.slugstack.oss"
@@ -39,7 +36,7 @@ dependencies {
     // implementation("org.springframework.boot:spring-boot-starter")
     // testImplementation("org.springframework.boot:spring-boot-starter-test")
 
-    // rewrite("org.openrewrite.recipe:rewrite-testing-frameworks:1.3.0")
+    // rewrite("org.openrewrite.recipe:rewrite-testing-frameworks:1.4.0")
     implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.4.0")
 }
 
@@ -50,11 +47,12 @@ configure<org.openrewrite.gradle.RewriteExtension> {
     // setFailOnDryRunResults(true)
     // setDoDryRunOnCheck(true)
 }
-
 // rewrite {
 //     activeRecipe("org.openrewrite.java.format.AutoFormat")
 //     activeRecipe("org.openrewrite.java.testing.junit5.JUnit5BestPractices")
+//     failOnInvalidActiveRecipes = false
 //     failOnDryRunResults = false
+//     doDryRunOnCheck = false
 // }
 
 configure<nebula.plugin.release.git.base.ReleasePluginExtension> {
