@@ -22,7 +22,7 @@ public class UnspecifiedGradleProjectApplication {
 
 }
 
-class Example {
+class CollectionsExample {
     // just wanting some reason to have imports and file content
     void example() {
         Set<String> someSet = new HashSet<>();
@@ -31,5 +31,46 @@ class Example {
         someList.add("anotherExample");
         List<String> emptyList = Collections.emptyList();
         emptyList.size();
+    }
+}
+
+class SwitchExample {
+    void example(int n) {
+        int q = 0;
+
+        switch (n) {
+            case 1:
+                q += 1;
+                break;
+            case 2:
+                q += 2;
+            default:
+                break;
+        }
+
+        switch (n) {
+            case 1:
+                q += 1;
+            default:
+                break;
+            case 2:
+                q += 2;
+        }
+
+        switch (n) {
+            case 1:
+                q += 1;
+            default:
+            case 2:
+                q += 2;
+            case 3:
+                q += 3;
+        }
+
+        switch (n) {
+            case 1:
+                q += 1;
+        }
+
     }
 }
