@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 // @lombok.Data
 // @java.lang.SuppressWarnings("checkstyle:HideUtilityClassConstructor")
-@SuppressWarnings("checkstyle:HideUtilityClassConstructor")
+// @SuppressWarnings("checkstyle:HideUtilityClassConstructor")
 @SpringBootApplication
 public class UnspecifiedGradleProjectApplication {
 

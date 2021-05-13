@@ -4,7 +4,9 @@ name: com.example.cleanup.HideUtilityClassConstructorSuppression
 styleConfigs:
   - org.openrewrite.java.cleanup.HideUtilityClassConstructorStyle:
       ignoreIfAnnotatedBy:
-        - '@java.lang.SuppressWarnings("checkstyle:HideUtilityClassConstructor")'
+        - "@lombok.experimental.UtilityClass"
+        - "@lombok.Data"
+        - "@org.springframework.boot.autoconfigure.SpringBootApplication"
 #
 #
 #
