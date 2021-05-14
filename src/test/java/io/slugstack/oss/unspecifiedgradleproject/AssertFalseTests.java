@@ -16,6 +16,11 @@ public class AssertFalseTests {
         assertFalse(isFalse());
     }
 
+    @Test
+    public void testFalseDirectly() {
+        assertFalse(false);
+    }
+
     private Integer notification() {
         return 1;
     }
