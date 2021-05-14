@@ -11,7 +11,7 @@ public class AssertFalseTests {
         assertFalse(notification() != null && notification() > 0);
     }
 
-
+    @Test
     public void testFalseWithMethodCall() {
         assertFalse(isFalse());
     }
