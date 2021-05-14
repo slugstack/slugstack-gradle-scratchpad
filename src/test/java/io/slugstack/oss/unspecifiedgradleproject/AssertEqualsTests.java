@@ -8,20 +8,29 @@ public class AssertEqualsTests {
 
     @Test
     void testEqualsWithPrimativeInts() {
-        assertEquals(someInt(), someInt());
+        assertEquals(intNotification(), intNotification());
     }
 
     @Test
-    void testEquals() {
-        assertEquals(1, notification());
+    void testEqualsWithObjectIntegers() {
+        assertEquals(1, integerNotification());
     }
 
-    private Integer notification() {
+    @Test
+    public void testEqualsWithDoubleNotification() {
+        assertEquals(0.0d, doubleNotification(), 0.2d, "These should be close.");
+    }
+
+    private Integer integerNotification() {
         return 1;
     }
 
-    private int someInt() {
+    private int intNotification() {
         return 1;
+    }
+
+    private double doubleNotification() {
+        return 0.1d;
     }
 
 }
