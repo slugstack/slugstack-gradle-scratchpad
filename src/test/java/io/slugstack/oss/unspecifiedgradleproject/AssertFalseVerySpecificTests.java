@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class AssertFalseVerySpecificTests {
 
     @Test
-    public void testFalseWithMethodCall() {
+    public void testFalseWithMethodCallPain() {
         assertFalse(isFalse());
     }
 
