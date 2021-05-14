@@ -49,12 +49,6 @@
             <scope>test</scope>
             <version>3.19.0</version>
         </dependency> -->
-        <!-- <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <scope>test</scope>
-            <version>5.7.1</version>
-        </dependency> -->
     </dependencies>
 
     <build>
@@ -68,22 +62,7 @@
                     <activeRecipes>
                         <!-- <recipe>org.openrewrite.java.testing.assertj.JUnitToAssertj</recipe> -->
                         <recipe>org.openrewrite.java.testing.assertj.Assertj</recipe>
-
-                        <!-- <recipe>org.openrewrite.java.cleanup.HideUtilityClassConstructor</recipe> -->
-                        <!-- <recipe>org.openrewrite.java.cleanup.Cleanup</recipe> -->
-                        <!-- <recipe>org.openrewrite.java.cleanup.DefaultComesLast</recipe> -->
-                        <!-- <recipe>com.example.cleanup</recipe> -->
-                        <!-- <recipe>org.openrewrite.java.format.AutoFormat</recipe> -->
-                        <!-- <recipe>org.openrewrite.java.testing.junit5.JUnit5BestPractices</recipe> -->
                     </activeRecipes>
-
-                    <activeStyles>
-                        <!-- <style>com.example.cleanup.HideUtilityClassConstructorSuppression</style> -->
-                        <!-- <style>io.moderne.spring.style</style> -->
-                    </activeStyles>
-
-                    <!-- <failOnInvalidActiveRecipes>true</failOnInvalidActiveRecipes> -->
-                    <!-- <failOnDryRunResults>true</failOnDryRunResults> -->
 
                 </configuration>
 
@@ -94,15 +73,6 @@
                         <version>1.4.0</version>
                     </dependency>
                 </dependencies>
-
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>dryRun</goal>
-                        </goals>
-                        <phase>verify</phase>
-                    </execution>
-                </executions>
 
             </plugin>
         </plugins>
