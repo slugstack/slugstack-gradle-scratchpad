@@ -11,8 +11,17 @@ public class AssertFalseTests {
         assertFalse(notification() != null && notification() > 0);
     }
 
+
+    public void testFalseWithMethodCall() {
+        assertFalse(isFalse());
+    }
+
     private Integer notification() {
         return 1;
+    }
+
+    private boolean isFalse() {
+        return false;
     }
 
 }
