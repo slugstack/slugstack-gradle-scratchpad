@@ -17,6 +17,11 @@ public class AssertFalseTests {
     }
 
     @Test
+    public void testFalseWithMethodCallObject() {
+        assertFalse(isFalseObject());
+    }
+
+    @Test
     public void testFalseDirectly() {
         assertFalse(false);
     }
@@ -26,6 +31,10 @@ public class AssertFalseTests {
     }
 
     private boolean isFalse() {
+        return false;
+    }
+
+    private Boolean isFalseObject() {
         return false;
     }
 
