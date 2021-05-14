@@ -21,6 +21,11 @@ public class AssertEqualsTests {
         assertEquals(0.0d, doubleNotification(), 0.2d, "These should be close.");
     }
 
+    @Test
+    public void testEqualsWithStrings() {
+        assertEquals("foo", "foo");
+    }
+
     private Integer integerNotification() {
         return 1;
     }
