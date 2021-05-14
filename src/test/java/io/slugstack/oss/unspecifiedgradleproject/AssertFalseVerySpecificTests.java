@@ -8,10 +8,10 @@ public class AssertFalseVerySpecificTests {
 
     @Test
     public void testFalseWithMethodCallPain() {
-        assertFalse(isFalse());
+        assertFalse(isFalseMethod());
     }
 
-    private boolean isFalse() {
+    private boolean isFalseMethod() {
         return false;
     }
 
