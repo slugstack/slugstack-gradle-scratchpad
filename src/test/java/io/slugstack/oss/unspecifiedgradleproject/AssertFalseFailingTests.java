@@ -7,20 +7,11 @@ import org.junit.jupiter.api.Test;
 public class AssertFalseFailingTests {
 
     @Test
-    public void testFalseWithMethodCallPrimative() {
-        assertFalse(isFalsePrimative());
+    public void testFalseWithMethodCall() {
+        assertFalse(isFalse());
     }
 
-    @Test
-    public void testFalseWithMethodCallObject() {
-        assertFalse(isFalseObject());
-    }
-
-    private boolean isFalsePrimative() {
-        return false;
-    }
-
-    private Boolean isFalseObject() {
+    private boolean isFalse() {
         return false;
     }
 }
