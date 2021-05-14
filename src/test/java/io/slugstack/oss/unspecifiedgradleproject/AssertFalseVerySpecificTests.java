@@ -7,12 +7,20 @@ import org.junit.jupiter.api.Test;
 public class AssertFalseVerySpecificTests {
 
     @Test
-    public void testFalseWithMethodCallPain() {
-        assertFalse(isFalseMethod());
+    public void testFalseWithMethodCallPrimative() {
+        assertFalse(isFalsePrimative());
     }
 
-    private boolean isFalseMethod() {
+    @Test
+    public void testFalseWithMethodCallObject() {
+        assertFalse(isFalseObject());
+    }
+
+    private boolean isFalsePrimative() {
         return false;
     }
 
+    private Boolean isFalseObject() {
+        return false;
+    }
 }
