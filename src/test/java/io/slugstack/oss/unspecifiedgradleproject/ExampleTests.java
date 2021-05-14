@@ -1,6 +1,6 @@
 package io.slugstack.oss.unspecifiedgradleproject;
 
-import org.junit.jupiter.api.Assertions;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +8,7 @@ public class ExampleTests {
 
     @Test
     void test() {
-        Assertions.assertEquals(1, notification());
+        assertEquals(1, notification());
     }
 
     private Integer notification() {
