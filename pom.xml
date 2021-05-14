@@ -47,8 +47,8 @@
                 <configuration>
 
                     <activeRecipes>
-                        <!-- <recipe>org.openrewrite.java.testing.assertj.JUnitToAssertj</recipe> -->
-                        <recipe>org.openrewrite.java.testing.assertj.Assertj</recipe>
+                        <recipe>org.openrewrite.java.testing.assertj.JUnitToAssertj</recipe>
+                        <!-- <recipe>org.openrewrite.java.testing.assertj.Assertj</recipe> -->
 
                         <!-- <recipe>org.openrewrite.java.cleanup.HideUtilityClassConstructor</recipe> -->
                         <!-- <recipe>org.openrewrite.java.cleanup.Cleanup</recipe> -->
