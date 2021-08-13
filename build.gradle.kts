@@ -39,7 +39,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
     // rewrite("org.openrewrite.recipe:rewrite-testing-frameworks:1.4.0")
-    implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.9.0")
+    implementation("org.openrewrite.recipe:rewrite-testing-frameworks:1.10.0")
 }
 
 configure<org.openrewrite.gradle.RewriteExtension> {
