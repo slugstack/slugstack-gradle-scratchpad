@@ -17,7 +17,7 @@ plugins {
     id("java")
     id("nebula.release") version "16.0.0"
     id("nebula.info") version "10.1.3"
-    id("nebula.javadoc-jar") version "17.3.3"
+    id("nebula.javadoc-jar") version "18.0.0"
     id("nebula.source-jar") version "17.3.3"
     id("nebula.maven-apache-license") version "18.0.0"
 
