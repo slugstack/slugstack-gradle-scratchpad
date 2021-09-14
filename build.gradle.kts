@@ -15,7 +15,7 @@ plugins {
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
 
     id("java")
-    id("nebula.release") version "15.3.1"
+    id("nebula.release") version "16.0.0"
     id("nebula.info") version "10.1.3"
     id("nebula.javadoc-jar") version "17.3.3"
     id("nebula.source-jar") version "17.3.3"
