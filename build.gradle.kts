@@ -6,7 +6,7 @@ buildscript {
 
     dependencies {
         // classpath("org.openrewrite:plugin:4.3.0-SNAPSHOT")
-        classpath("org.openrewrite:plugin:latest.integration")
+        classpath("org.openrewrite:plugin:5.12.0")
     }
 }
 
