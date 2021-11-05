@@ -1,0 +1,21 @@
+---
+name: dispatcher-test
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send POST request
+        run: |
+          curl -v -XPOST -u ":${{github.token}}" \
+          -H "Accept: application/vnd.github.everest-preview+json" \
+          -H "Content-Type: application/json" https://api.github.com/repos/slugstack/slugstack-rewrite-java-definitions/dispatches \
+          --data '{
+                  "event_type": "trigger",
+                  "client_payload": {
+
+                                    }
+                  }'
