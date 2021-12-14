@@ -1,7 +1,7 @@
 plugins {
     `java-library`
     id("nebula.maven-publish") version "17.3.2"
-    id("nebula.contacts") version "5.1.0"
+    id("nebula.contacts") version "6.0.0"
     id("nebula.info") version "9.3.0"
 
     id("nebula.release") version "16.0.0"
