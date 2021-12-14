@@ -1,8 +1,9 @@
-rootProject.name = "slugstack-rewrite-recipe-scratchpad"
+rootProject.name = "slugstack-gradle-scratchpad"
 
 pluginManagement {
     repositories {
-        mavenLocal()
         gradlePluginPortal()
+        mavenLocal()
+        mavenCentral()
     }
 }

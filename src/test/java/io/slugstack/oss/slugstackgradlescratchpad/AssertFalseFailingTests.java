@@ -1,8 +1,8 @@
-package io.slugstack.oss.unspecifiedgradleproject;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
+package io.slugstack.oss.slugstackgradlescratchpad;
 
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class AssertFalseFailingTests {
 
@@ -11,7 +11,7 @@ public class AssertFalseFailingTests {
         assertFalse(isFalse());
     }
 
-    private boolean isFalse() {
+    private static boolean isFalse() {
         return false;
     }
 }

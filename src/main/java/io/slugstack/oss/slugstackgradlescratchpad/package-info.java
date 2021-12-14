@@ -1,0 +1,1 @@
+package io.slugstack.oss.slugstackgradlescratchpad;
