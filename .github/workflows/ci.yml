@@ -33,3 +33,29 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: ${{ env.GRADLE_SWITCHES }} build
+  depchecktest:
+    runs-on: ubuntu-latest
+    name: depecheck_test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set-up node
+        uses: actions/setup-node@v2
+        with:
+          cache: npm
+      - run: npm ci
+      - name: Depcheck
+        uses: dependency-check/Dependency-Check_Action@main
+        id: Depcheck
+        with:
+          project: "test"
+          path: "."
+          format: "HTML"
+          args: >
+            --failOnCVSS 7
+            --enableRetired
+      - name: Upload Test results
+        uses: actions/upload-artifact@master
+        with:
+          name: Depcheck report
+          path: ${{github.workspace}}/reports
