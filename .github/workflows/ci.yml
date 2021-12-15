@@ -33,6 +33,14 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: ${{ env.GRADLE_SWITCHES }} build
+  depchecktest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: build
+        run: ./gradlew build -x test
       - uses: dependency-check/Dependency-Check_Action@main
         with:
           project: test
@@ -46,26 +54,3 @@ jobs:
         with:
           name: depcheck-report
           path: ${{ github.workspace }}/reports
-  # depchecktest:
-  #   runs-on: ubuntu-latest
-  #   name: depecheck_test
-  #   steps:
-  #     - name: checkout
-  #       uses: actions/checkout@v2
-  #     - name: build
-  #       run: ./gradlew build
-  #     - name: Depcheck
-  #       uses: dependency-check/Dependency-Check_Action@main
-  #       id: Depcheck
-  #       with:
-  #         project: "test"
-  #         path: "."
-  #         format: "HTML"
-  #         args: >
-  #           --failOnCVSS 7
-  #           --enableRetired
-  #     - name: Upload Test results
-  #       uses: actions/upload-artifact@master
-  #       with:
-  #         name: Depcheck report
-  #         path: ${{github.workspace}}/reports
