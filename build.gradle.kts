@@ -31,6 +31,7 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.2")
     testImplementation("org.assertj:assertj-core:3.22.0")
     implementation("log4j:log4j:1.2.7")
+    implementation("junit:junit:4.12")
 }
 
 tasks.named<Test>("test") {
