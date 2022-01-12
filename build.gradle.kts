@@ -8,6 +8,7 @@ plugins {
     id("nebula.javadoc-jar") version "17.3.2"
     id("nebula.source-jar") version "17.3.2"
     id("nebula.maven-apache-license") version "18.1.0"
+    id("org.owasp.dependencycheck") version "latest.release"
 }
 
 configure<nebula.plugin.release.git.base.ReleasePluginExtension> {
