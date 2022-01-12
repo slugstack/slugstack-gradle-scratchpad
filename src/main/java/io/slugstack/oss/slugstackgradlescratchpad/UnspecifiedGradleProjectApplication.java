@@ -9,6 +9,11 @@ public class UnspecifiedGradleProjectApplication {
         // empty
     }
 
+    public static String containsUnused() {
+        String unusedLocal = "unusedLocal";
+        return "directly-returned-result";
+    }
+
     static void collectionsExample() {
         Set<String> someSet = new HashSet<>();
         someSet.add("someExample");
