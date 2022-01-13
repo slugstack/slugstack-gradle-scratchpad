@@ -40,7 +40,8 @@ jobs:
         with:
           fetch-depth: 0
       - name: build
-        run: ./gradlew build -x test
+        # run: ./gradlew build -x test
+        run: ./gradlew dependencyCheckAnalyze
       # - uses: dependency-check/Dependency-Check_Action@1.1.0
       # - uses: dependency-check/Dependency-Check_Action@main
       #   with:
