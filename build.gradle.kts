@@ -15,6 +15,10 @@ configure<nebula.plugin.release.git.base.ReleasePluginExtension> {
     defaultVersionStrategy = nebula.plugin.release.NetflixOssStrategies.SNAPSHOT(project)
 }
 
+configure<org.owasp.dependencycheck.gradle.extension.DependencyCheckExtension> {
+    format = org.owasp.dependencycheck.reporting.ReportGenerator.Format.ALL
+}
+
 group = "io.slugstack.oss"
 description = "For random testing with gradle-based projects"
 
