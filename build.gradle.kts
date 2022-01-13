@@ -17,6 +17,7 @@ configure<nebula.plugin.release.git.base.ReleasePluginExtension> {
 
 configure<org.owasp.dependencycheck.gradle.extension.DependencyCheckExtension> {
     format = org.owasp.dependencycheck.reporting.ReportGenerator.Format.ALL
+	analyzers.assemblyEnabled = false
     // failBuildOnCVSS = 9F
 }
 
@@ -39,7 +40,7 @@ dependencies {
     implementation("log4j:log4j:1.2.7")
     // testImplementation("org.apache.logging.log4j:log4j-core:2.13.0") does not appear to trigger dependency-check
     implementation("org.apache.logging.log4j:log4j-core:2.13.0") // triggers dependency-check
-    implementation("junit:junit:4.12")
+//    implementation("junit:junit:4.12")
 }
 
 tasks.named<Test>("test") {
