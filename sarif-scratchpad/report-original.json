@@ -1,0 +1,570 @@
+{
+    "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "dependency-check",
+                    "version": "6.5.3",
+                    "informationUri": "https://jeremylong.github.io/DependencyCheck/"
+                },
+                "properties": {
+                    "disclaimer": "Dependency-Check is an open source tool performing a best effort analysis of 3rd party dependencies; false positives and false negatives may exist in the analysis performed by the tool. Use of the tool and the reporting provided constitutes acceptance for use in an AS IS condition, and there are NO warranties, implied or otherwise, with regard to the analysis or its use. Any use of the tool and the reporting provided is at the user's risk. In no event shall the copyright holder or OWASP be held liable for any damages whatsoever arising out of or in connection with the use of this tool, the analysis performed, or the resulting report.",
+                    "nvd": "This report contains data retrieved from the National Vulnerability Database: http://nvd.nist.gov",
+                    "npm": "This report may contain data retrieved from the NPM Public Advisories: https://www.npmjs.com/advisories",
+                    "retirejs": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
+                    "ossindex": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org",
+                    "NVD CVE Checked": "2022-01-12T17:10:18",
+                    "NVD CVE Modified": "2022-01-12T15:00:02",
+                    "VersionCheckOn": "2022-01-12T17:10:18"
+                }
+            },
+            "artifacts": [
+                {
+                    "description": {
+                        "text": "\n    This is the core API of hamcrest matcher framework to be used by third-party framework providers. This includes the a foundation set of matcher implementations for common operations.\n  "
+                    },
+                    "location": {
+                        "uri": "https:///\/Users\/aegershman\/.m2\/repository\/org\/hamcrest\/hamcrest-core\/1.3\/hamcrest-core-1.3.jar"
+                    },
+                    "hashes": {
+                        "md5": "6393363b47ddcbba82321110c3e07519",
+                        "sha1": "42a25dc3219429f0e5d060061f71acb49bf010a0",
+                        "sha256": "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9"
+                    },
+                    "properties": {
+                        "id1": "pkg:maven\/org.hamcrest\/hamcrest-core@1.3"
+                    }
+                },
+                {
+                    "description": {
+                        "text": "JUnit is a unit testing framework for Java, created by Erich Gamma and Kent Beck."
+                    },
+                    "location": {
+                        "uri": "https:///\/Users\/aegershman\/.m2\/repository\/junit\/junit\/4.12\/junit-4.12.jar"
+                    },
+                    "hashes": {
+                        "md5": "5b38c40c97fbd0adee29f91e60405584",
+                        "sha1": "2973d150c0dc1fefe998f834810d68f278ea58ec",
+                        "sha256": "59721f0805e223d84b90677887d9ff567dc534d7c502ca903c0c2b17f05c116a"
+                    },
+                    "properties": {
+                        "license": "Eclipse Public License 1.0: http:\/\/www.eclipse.org\/legal\/epl-v10.html",
+                        "id2": "pkg:maven\/junit\/junit@4.12",
+                        "vid1": "cpe:2.3:a:junit:junit4:4.12:*:*:*:*:*:*:*"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/log4j\/log4j\/1.2.7\/5b8a2a161048eb7481407ef0a81c2d90489ed412\/log4j-1.2.7.jar"
+                    },
+                    "hashes": {
+                        "md5": "8631619c6becebaac70862ac9c36af44",
+                        "sha1": "5b8a2a161048eb7481407ef0a81c2d90489ed412",
+                        "sha256": "aa04b7d49d0c4c3c2d4605a3dda1796c440a1fdf1ea99d6fe2931ca3986dfd35"
+                    },
+                    "properties": {
+                        "id3": "pkg:maven\/log4j\/log4j@1.2.7",
+                        "vid2": "cpe:2.3:a:apache:log4j:1.2.7:*:*:*:*:*:*:*"
+                    }
+                },
+                {
+                    "description": {
+                        "text": "The Apache Log4j API"
+                    },
+                    "location": {
+                        "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/org.apache.logging.log4j\/log4j-api\/2.13.0\/adaee84c60e0705cf39df8b9fedfab100d3faf2\/log4j-api-2.13.0.jar"
+                    },
+                    "hashes": {
+                        "md5": "f238eeb84b7b6d591239515a0af1aff2",
+                        "sha1": "0adaee84c60e0705cf39df8b9fedfab100d3faf2",
+                        "sha256": "5650d84d57373de6295934fa02b2022020567082cceb50fbb34fcb7ce9a52d1f"
+                    },
+                    "properties": {
+                        "license": "https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt",
+                        "id4": "pkg:maven\/org.apache.logging.log4j\/log4j-api@2.13.0",
+                        "vid3": "cpe:2.3:a:apache:log4j:2.13.0:*:*:*:*:*:*:*"
+                    }
+                },
+                {
+                    "description": {
+                        "text": "The Apache Log4j Implementation"
+                    },
+                    "location": {
+                        "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/org.apache.logging.log4j\/log4j-core\/2.13.0\/57b8b57dac4c87696acb4b8457fd8cbf4273d40d\/log4j-core-2.13.0.jar"
+                    },
+                    "hashes": {
+                        "md5": "b71a13fd5df251694fca116240003b22",
+                        "sha1": "57b8b57dac4c87696acb4b8457fd8cbf4273d40d",
+                        "sha256": "82e91afe0c5628b32ae99dd6965878402c668773fbd49b45b2b8c06a426c5bbb"
+                    },
+                    "properties": {
+                        "license": "https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt",
+                        "id5": "pkg:maven\/org.apache.logging.log4j\/log4j-core@2.13.0",
+                        "vid4": "cpe:2.3:a:apache:log4j:2.13.0:*:*:*:*:*:*:*"
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "ruleId": "CVE-2020-15250",
+                    "message": {
+                        "text": "CVE-2020-15250 - In JUnit4 from version 4.7 and before 4.13.1, the test rule TemporaryFolder contains a local information disclosure vulnerability. On Unix like systems, the system's temporary directory is shared between all users on that system. Because of this, when files and directories are written into this directory they are, by default, readable by other users on that same system. This vulnerability does not allow other users to overwrite the contents of these directories or files. This is purely an information disclosure vulnerability. This vulnerability impacts you if the JUnit tests write sensitive information, like API keys or passwords, into the temporary folder, and the JUnit tests execute in an environment where the OS has other untrusted users. Because certain JDK file system APIs were only added in JDK 1.7, this this fix is dependent upon the version of the JDK you are using. For Java 1.7 and higher users: this vulnerability is fixed in 4.13.1. For Java 1.6 and lower users: no patch is available, you must use the workaround below. If you are unable to patch, or are stuck running on Java 1.6, specifying the `java.io.tmpdir` system environment variable to a directory that is exclusively owned by the executing user will fix this vulnerability. For more information, including an example of vulnerable code, see the referenced GitHub Security Advisory."
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "https:///\/Users\/aegershman\/.m2\/repository\/junit\/junit\/4.12\/junit-4.12.jar",
+                                    "index": 1
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "cvssv2_score": 1.9,
+                        "cvssv2_accessVector": "LOCAL",
+                        "cvssv2_accessComplexity": "MEDIUM",
+                        "cvssv2_authenticationr": "NONE",
+                        "cvssv2_confidentialImpact": "PARTIAL",
+                        "cvssv2_integrityImpact": "NONE",
+                        "cvssv2_availabilityImpact": "NONE",
+                        "cvssv2_severity": "LOW",
+                        "cvssv2_version": "2.0",
+                        "cvssv2_exploitabilityScore": "3.4",
+                        "cvssv2_impactScore": "2.9",
+                        "cvssv2_userInteractionRequired": "true",
+                        "cvssv3_baseScore": 5.5,
+                        "cvssv3_attackVector": "LOCAL",
+                        "cvssv3_attackComplexity": "LOW",
+                        "cvssv3_privilegesRequired": "NONE",
+                        "cvssv3_userInteraction": "REQUIRED",
+                        "cvssv3_scope": "UNCHANGED",
+                        "cvssv3_confidentialityImpact": "HIGH",
+                        "cvssv3_integrityImpact": "NONE",
+                        "cvssv3_availabilityImpact": "NONE",
+                        "cvssv3_baseSeverity": "MEDIUM",
+                        "cvssv3_exploitabilityScore": "1.8",
+                        "cvssv3_impactScore": "3.6",
+                        "cvssv3_version": "3.1",
+                        "source": "NVD"
+                    }
+                },
+                {
+                    "ruleId": "CVE-2019-17571",
+                    "message": {
+                        "text": "CVE-2019-17571 - Included in Log4j 1.2 is a SocketServer class that is vulnerable to deserialization of untrusted data which can be exploited to remotely execute arbitrary code when combined with a deserialization gadget when listening to untrusted network traffic for log data. This affects Log4j versions up to 1.2 up to 1.2.17."
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/log4j\/log4j\/1.2.7\/5b8a2a161048eb7481407ef0a81c2d90489ed412\/log4j-1.2.7.jar",
+                                    "index": 2
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "cvssv2_score": 7.5,
+                        "cvssv2_accessVector": "NETWORK",
+                        "cvssv2_accessComplexity": "LOW",
+                        "cvssv2_authenticationr": "NONE",
+                        "cvssv2_confidentialImpact": "PARTIAL",
+                        "cvssv2_integrityImpact": "PARTIAL",
+                        "cvssv2_availabilityImpact": "PARTIAL",
+                        "cvssv2_severity": "HIGH",
+                        "cvssv2_version": "2.0",
+                        "cvssv2_exploitabilityScore": "10.0",
+                        "cvssv2_impactScore": "6.4",
+                        "cvssv3_baseScore": 9.8,
+                        "cvssv3_attackVector": "NETWORK",
+                        "cvssv3_attackComplexity": "LOW",
+                        "cvssv3_privilegesRequired": "NONE",
+                        "cvssv3_userInteraction": "NONE",
+                        "cvssv3_scope": "UNCHANGED",
+                        "cvssv3_confidentialityImpact": "HIGH",
+                        "cvssv3_integrityImpact": "HIGH",
+                        "cvssv3_availabilityImpact": "HIGH",
+                        "cvssv3_baseSeverity": "CRITICAL",
+                        "cvssv3_exploitabilityScore": "3.9",
+                        "cvssv3_impactScore": "5.9",
+                        "cvssv3_version": "3.1",
+                        "source": "NVD"
+                    }
+                },
+                {
+                    "ruleId": "CVE-2020-9488",
+                    "message": {
+                        "text": "CVE-2020-9488 - Improper validation of certificate with host mismatch in Apache Log4j SMTP appender. This could allow an SMTPS connection to be intercepted by a man-in-the-middle attack which could leak any log messages sent through that appender."
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/log4j\/log4j\/1.2.7\/5b8a2a161048eb7481407ef0a81c2d90489ed412\/log4j-1.2.7.jar",
+                                    "index": 2
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "cvssv2_score": 4.3,
+                        "cvssv2_accessVector": "NETWORK",
+                        "cvssv2_accessComplexity": "MEDIUM",
+                        "cvssv2_authenticationr": "NONE",
+                        "cvssv2_confidentialImpact": "PARTIAL",
+                        "cvssv2_integrityImpact": "NONE",
+                        "cvssv2_availabilityImpact": "NONE",
+                        "cvssv2_severity": "MEDIUM",
+                        "cvssv2_version": "2.0",
+                        "cvssv2_exploitabilityScore": "8.6",
+                        "cvssv2_impactScore": "2.9",
+                        "cvssv3_baseScore": 3.7,
+                        "cvssv3_attackVector": "NETWORK",
+                        "cvssv3_attackComplexity": "HIGH",
+                        "cvssv3_privilegesRequired": "NONE",
+                        "cvssv3_userInteraction": "NONE",
+                        "cvssv3_scope": "UNCHANGED",
+                        "cvssv3_confidentialityImpact": "LOW",
+                        "cvssv3_integrityImpact": "NONE",
+                        "cvssv3_availabilityImpact": "NONE",
+                        "cvssv3_baseSeverity": "LOW",
+                        "cvssv3_exploitabilityScore": "2.2",
+                        "cvssv3_impactScore": "1.4",
+                        "cvssv3_version": "3.1",
+                        "source": "NVD"
+                    }
+                },
+                {
+                    "ruleId": "CVE-2021-4104",
+                    "message": {
+                        "text": "CVE-2021-4104 - JMSAppender in Log4j 1.2 is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration. The attacker can provide TopicBindingName and TopicConnectionFactoryBindingName configurations causing JMSAppender to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-44228. Note this issue only affects Log4j 1.2 when specifically configured to use JMSAppender, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.\n\n\n===================================================\nThe following information is provided by Sonatype Nexus Intelligence. Nexus Intelligence is the only security research service that performs \"secondary expansion\" to determine if newly discovered vulnerabilities are also present in other components.\n\nLearn more about Nexus Intelligence -- https:\/\/www.sonatype.com\/products\/intelligence\n===================================================\n\n\nExplanation\n---------------------------------------------------\n\nThe `log4j:log4j` package is vulnerable to Deserialization of Untrusted Data. The `lookup()` and `activateOptions()` methods in the `JMSAppender` class allow `JNDI` lookup requests to be made when the `TopicBindingName` and `TopicConnectionFactoryBindingName` specify a trusted host. Lookups made to this host may be used by attackers to request a serialized malicious Java Object that can be deserialized and executed, leading to Remote Code Execution (RCE). \n\nNote that this vulnerability is different from CVE-2021-44228 and requires the attacker to be in control of the third party host that is specified in the configuration, or write access to the Log4j configuration file in order to specify a malicious lookup host directly. This vulnerability also only affects the 1.x.x component of `Log4j` released under the `log4j:log4j` group and artifact IDs.\n\n*Advisory Deviation Notice:* The Sonatype security research team discovered that the root cause of the vulnerability is in all versions of log4j:log4j, not just in the 1.2.x branch as the advisory states. \n\n\nDetection\n---------------------------------------------------\n\nThe application is vulnerable by using this component under the following circumstances:\n\n- The configuration file specifies an allowed third-party `JNDI` lookup host for the `JMSAppender`\n- the `javax.jms.*` API is included in the application's `CLASSPATH`\n\nReference: https:\/\/bugzilla.redhat.com\/show_bug.cgi?id=2031667#c28\n\n\nRecommendation\n---------------------------------------------------\n\nThe 1.x.x component has reach `End of Life`, and users should upgrade to a non-vulnerable version of `org.apache.logging.log4j:log4j-core` as this component includes other security vulnerabilities that are not fixed.\n\nReferences:\n- https:\/\/github.com\/apache\/logging-log4j2\/pull\/608#issuecomment-990494126\n- https:\/\/logging.apache.org\/log4j\/1.2\/\n"
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/log4j\/log4j\/1.2.7\/5b8a2a161048eb7481407ef0a81c2d90489ed412\/log4j-1.2.7.jar",
+                                    "index": 2
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "cvssv3_baseScore": 8.1,
+                        "cvssv3_attackVector": "N",
+                        "cvssv3_attackComplexity": "H",
+                        "cvssv3_privilegesRequired": "N",
+                        "cvssv3_userInteraction": "N",
+                        "cvssv3_scope": "U",
+                        "cvssv3_confidentialityImpact": "H",
+                        "cvssv3_integrityImpact": "H",
+                        "cvssv3_availabilityImpact": "H",
+                        "cvssv3_baseSeverity": "HIGH",
+                        "source": "OSSINDEX"
+                    }
+                },
+                {
+                    "ruleId": "CVE-2020-9488",
+                    "message": {
+                        "text": "CVE-2020-9488 - Improper validation of certificate with host mismatch in Apache Log4j SMTP appender. This could allow an SMTPS connection to be intercepted by a man-in-the-middle attack which could leak any log messages sent through that appender."
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/org.apache.logging.log4j\/log4j-api\/2.13.0\/adaee84c60e0705cf39df8b9fedfab100d3faf2\/log4j-api-2.13.0.jar",
+                                    "index": 3
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "cvssv2_score": 4.3,
+                        "cvssv2_accessVector": "NETWORK",
+                        "cvssv2_accessComplexity": "MEDIUM",
+                        "cvssv2_authenticationr": "NONE",
+                        "cvssv2_confidentialImpact": "PARTIAL",
+                        "cvssv2_integrityImpact": "NONE",
+                        "cvssv2_availabilityImpact": "NONE",
+                        "cvssv2_severity": "MEDIUM",
+                        "cvssv2_version": "2.0",
+                        "cvssv2_exploitabilityScore": "8.6",
+                        "cvssv2_impactScore": "2.9",
+                        "cvssv3_baseScore": 3.7,
+                        "cvssv3_attackVector": "NETWORK",
+                        "cvssv3_attackComplexity": "HIGH",
+                        "cvssv3_privilegesRequired": "NONE",
+                        "cvssv3_userInteraction": "NONE",
+                        "cvssv3_scope": "UNCHANGED",
+                        "cvssv3_confidentialityImpact": "LOW",
+                        "cvssv3_integrityImpact": "NONE",
+                        "cvssv3_availabilityImpact": "NONE",
+                        "cvssv3_baseSeverity": "LOW",
+                        "cvssv3_exploitabilityScore": "2.2",
+                        "cvssv3_impactScore": "1.4",
+                        "cvssv3_version": "3.1",
+                        "source": "NVD"
+                    }
+                },
+                {
+                    "ruleId": "CVE-2020-9488",
+                    "message": {
+                        "text": "CVE-2020-9488 - Improper validation of certificate with host mismatch in Apache Log4j SMTP appender. This could allow an SMTPS connection to be intercepted by a man-in-the-middle attack which could leak any log messages sent through that appender."
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/org.apache.logging.log4j\/log4j-core\/2.13.0\/57b8b57dac4c87696acb4b8457fd8cbf4273d40d\/log4j-core-2.13.0.jar",
+                                    "index": 4
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "cvssv2_score": 4.3,
+                        "cvssv2_accessVector": "NETWORK",
+                        "cvssv2_accessComplexity": "MEDIUM",
+                        "cvssv2_authenticationr": "NONE",
+                        "cvssv2_confidentialImpact": "PARTIAL",
+                        "cvssv2_integrityImpact": "NONE",
+                        "cvssv2_availabilityImpact": "NONE",
+                        "cvssv2_severity": "MEDIUM",
+                        "cvssv2_version": "2.0",
+                        "cvssv2_exploitabilityScore": "8.6",
+                        "cvssv2_impactScore": "2.9",
+                        "cvssv3_baseScore": 3.7,
+                        "cvssv3_attackVector": "NETWORK",
+                        "cvssv3_attackComplexity": "HIGH",
+                        "cvssv3_privilegesRequired": "NONE",
+                        "cvssv3_userInteraction": "NONE",
+                        "cvssv3_scope": "UNCHANGED",
+                        "cvssv3_confidentialityImpact": "LOW",
+                        "cvssv3_integrityImpact": "NONE",
+                        "cvssv3_availabilityImpact": "NONE",
+                        "cvssv3_baseSeverity": "LOW",
+                        "cvssv3_exploitabilityScore": "2.2",
+                        "cvssv3_impactScore": "1.4",
+                        "cvssv3_version": "3.1",
+                        "source": "NVD"
+                    }
+                },
+                {
+                    "ruleId": "CVE-2021-44228",
+                    "message": {
+                        "text": "CVE-2021-44228 - Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (along with 2.12.2, 2.12.3, and 2.3.1), this functionality has been completely removed. Note that this vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects."
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/org.apache.logging.log4j\/log4j-core\/2.13.0\/57b8b57dac4c87696acb4b8457fd8cbf4273d40d\/log4j-core-2.13.0.jar",
+                                    "index": 4
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "cvssv2_score": 9.3,
+                        "cvssv2_accessVector": "NETWORK",
+                        "cvssv2_accessComplexity": "MEDIUM",
+                        "cvssv2_authenticationr": "NONE",
+                        "cvssv2_confidentialImpact": "COMPLETE",
+                        "cvssv2_integrityImpact": "COMPLETE",
+                        "cvssv2_availabilityImpact": "COMPLETE",
+                        "cvssv2_severity": "HIGH",
+                        "cvssv2_version": "2.0",
+                        "cvssv2_exploitabilityScore": "8.6",
+                        "cvssv2_impactScore": "10.0",
+                        "cvssv3_baseScore": 10.0,
+                        "cvssv3_attackVector": "NETWORK",
+                        "cvssv3_attackComplexity": "LOW",
+                        "cvssv3_privilegesRequired": "NONE",
+                        "cvssv3_userInteraction": "NONE",
+                        "cvssv3_scope": "CHANGED",
+                        "cvssv3_confidentialityImpact": "HIGH",
+                        "cvssv3_integrityImpact": "HIGH",
+                        "cvssv3_availabilityImpact": "HIGH",
+                        "cvssv3_baseSeverity": "CRITICAL",
+                        "cvssv3_exploitabilityScore": "3.9",
+                        "cvssv3_impactScore": "6.0",
+                        "cvssv3_version": "3.1",
+                        "source": "NVD"
+                    }
+                },
+                {
+                    "ruleId": "CVE-2021-44832",
+                    "message": {
+                        "text": "CVE-2021-44832 - Apache Log4j2 versions 2.0-beta7 through 2.17.0 (excluding security fix releases 2.3.2 and 2.12.4) are vulnerable to a remote code execution (RCE) attack when a configuration uses a JDBC Appender with a JNDI LDAP data source URI when an attacker has control of the target LDAP server. This issue is fixed by limiting JNDI data source names to the java protocol in Log4j2 versions 2.17.1, 2.12.4, and 2.3.2."
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/org.apache.logging.log4j\/log4j-core\/2.13.0\/57b8b57dac4c87696acb4b8457fd8cbf4273d40d\/log4j-core-2.13.0.jar",
+                                    "index": 4
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "cvssv2_score": 6.0,
+                        "cvssv2_accessVector": "NETWORK",
+                        "cvssv2_accessComplexity": "MEDIUM",
+                        "cvssv2_authenticationr": "SINGLE",
+                        "cvssv2_confidentialImpact": "PARTIAL",
+                        "cvssv2_integrityImpact": "PARTIAL",
+                        "cvssv2_availabilityImpact": "PARTIAL",
+                        "cvssv2_severity": "MEDIUM",
+                        "cvssv2_version": "2.0",
+                        "cvssv2_exploitabilityScore": "6.8",
+                        "cvssv2_impactScore": "6.4",
+                        "cvssv3_baseScore": 6.6,
+                        "cvssv3_attackVector": "NETWORK",
+                        "cvssv3_attackComplexity": "HIGH",
+                        "cvssv3_privilegesRequired": "HIGH",
+                        "cvssv3_userInteraction": "NONE",
+                        "cvssv3_scope": "UNCHANGED",
+                        "cvssv3_confidentialityImpact": "HIGH",
+                        "cvssv3_integrityImpact": "HIGH",
+                        "cvssv3_availabilityImpact": "HIGH",
+                        "cvssv3_baseSeverity": "MEDIUM",
+                        "cvssv3_exploitabilityScore": "0.7",
+                        "cvssv3_impactScore": "5.9",
+                        "cvssv3_version": "3.1",
+                        "source": "NVD"
+                    }
+                },
+                {
+                    "ruleId": "CVE-2021-45046",
+                    "message": {
+                        "text": "CVE-2021-45046 - It was found that the fix to address CVE-2021-44228 in Apache Log4j 2.15.0 was incomplete in certain non-default configurations. This could allows attackers with control over Thread Context Map (MDC) input data when the logging configuration uses a non-default Pattern Layout with either a Context Lookup (for example, $${ctx:loginId}) or a Thread Context Map pattern (%X, %mdc, or %MDC) to craft malicious input data using a JNDI Lookup pattern resulting in an information leak and remote code execution in some environments and local code execution in all environments. Log4j 2.16.0 (Java 8) and 2.12.2 (Java 7) fix this issue by removing support for message lookup patterns and disabling JNDI functionality by default."
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/org.apache.logging.log4j\/log4j-core\/2.13.0\/57b8b57dac4c87696acb4b8457fd8cbf4273d40d\/log4j-core-2.13.0.jar",
+                                    "index": 4
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "cvssv2_score": 5.1,
+                        "cvssv2_accessVector": "NETWORK",
+                        "cvssv2_accessComplexity": "HIGH",
+                        "cvssv2_authenticationr": "NONE",
+                        "cvssv2_confidentialImpact": "PARTIAL",
+                        "cvssv2_integrityImpact": "PARTIAL",
+                        "cvssv2_availabilityImpact": "PARTIAL",
+                        "cvssv2_severity": "MEDIUM",
+                        "cvssv2_version": "2.0",
+                        "cvssv2_exploitabilityScore": "4.9",
+                        "cvssv2_impactScore": "6.4",
+                        "cvssv3_baseScore": 9.0,
+                        "cvssv3_attackVector": "NETWORK",
+                        "cvssv3_attackComplexity": "HIGH",
+                        "cvssv3_privilegesRequired": "NONE",
+                        "cvssv3_userInteraction": "NONE",
+                        "cvssv3_scope": "CHANGED",
+                        "cvssv3_confidentialityImpact": "HIGH",
+                        "cvssv3_integrityImpact": "HIGH",
+                        "cvssv3_availabilityImpact": "HIGH",
+                        "cvssv3_baseSeverity": "CRITICAL",
+                        "cvssv3_exploitabilityScore": "2.2",
+                        "cvssv3_impactScore": "6.0",
+                        "cvssv3_version": "3.1",
+                        "source": "NVD"
+                    }
+                },
+                {
+                    "ruleId": "CVE-2021-45105",
+                    "message": {
+                        "text": "CVE-2021-45105 - Apache Log4j2 versions 2.0-alpha1 through 2.16.0 (excluding 2.12.3 and 2.3.1) did not protect from uncontrolled recursion from self-referential lookups. This allows an attacker with control over Thread Context Map data to cause a denial of service when a crafted string is interpreted. This issue was fixed in Log4j 2.17.0, 2.12.3, and 2.3.1."
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/org.apache.logging.log4j\/log4j-core\/2.13.0\/57b8b57dac4c87696acb4b8457fd8cbf4273d40d\/log4j-core-2.13.0.jar",
+                                    "index": 4
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "cvssv2_score": 4.3,
+                        "cvssv2_accessVector": "NETWORK",
+                        "cvssv2_accessComplexity": "MEDIUM",
+                        "cvssv2_authenticationr": "NONE",
+                        "cvssv2_confidentialImpact": "NONE",
+                        "cvssv2_integrityImpact": "NONE",
+                        "cvssv2_availabilityImpact": "PARTIAL",
+                        "cvssv2_severity": "MEDIUM",
+                        "cvssv2_version": "2.0",
+                        "cvssv2_exploitabilityScore": "8.6",
+                        "cvssv2_impactScore": "2.9",
+                        "cvssv3_baseScore": 5.9,
+                        "cvssv3_attackVector": "NETWORK",
+                        "cvssv3_attackComplexity": "HIGH",
+                        "cvssv3_privilegesRequired": "NONE",
+                        "cvssv3_userInteraction": "NONE",
+                        "cvssv3_scope": "UNCHANGED",
+                        "cvssv3_confidentialityImpact": "NONE",
+                        "cvssv3_integrityImpact": "NONE",
+                        "cvssv3_availabilityImpact": "HIGH",
+                        "cvssv3_baseSeverity": "MEDIUM",
+                        "cvssv3_exploitabilityScore": "2.2",
+                        "cvssv3_impactScore": "3.6",
+                        "cvssv3_version": "3.1",
+                        "source": "NVD"
+                    }
+                },
+                {
+                    "ruleId": "CWE-502: Deserialization of Untrusted Data",
+                    "message": {
+                        "text": "CWE-502: Deserialization of Untrusted Data - The component 'Log4j' is vulnerable to CWE-502.The application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.[For version 2.0-beta9., For version 2.0-rc1., For version 2.0-rc2., From version 2.0.0 up to and including 2.14.1.]"
+                    },
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "https:///\/Users\/aegershman\/.gradle\/caches\/modules-2\/files-2.1\/org.apache.logging.log4j\/log4j-core\/2.13.0\/57b8b57dac4c87696acb4b8457fd8cbf4273d40d\/log4j-core-2.13.0.jar",
+                                    "index": 4
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "cvssv3_baseScore": 10.0,
+                        "cvssv3_attackVector": "N",
+                        "cvssv3_attackComplexity": "L",
+                        "cvssv3_privilegesRequired": "N",
+                        "cvssv3_userInteraction": "N",
+                        "cvssv3_scope": "C",
+                        "cvssv3_confidentialityImpact": "H",
+                        "cvssv3_integrityImpact": "H",
+                        "cvssv3_availabilityImpact": "H",
+                        "cvssv3_baseSeverity": "CRITICAL",
+                        "source": "OSSINDEX"
+                    }
+                }
+            ]
+        }
+    ]
+}
