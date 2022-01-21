@@ -9,6 +9,7 @@ plugins {
     id("nebula.source-jar") version "18.2.0"
     id("nebula.maven-apache-license") version "18.2.0"
     id("org.owasp.dependencycheck") version "latest.release"
+    id("io.snyk.gradle.plugin.snykplugin") version "0.4"
 }
 
 configure<nebula.plugin.release.git.base.ReleasePluginExtension> {
@@ -19,6 +20,14 @@ configure<org.owasp.dependencycheck.gradle.extension.DependencyCheckExtension> {
     format = org.owasp.dependencycheck.reporting.ReportGenerator.Format.ALL
 	analyzers.assemblyEnabled = false
     // failBuildOnCVSS = 9F
+}
+
+configure<io.snyk.gradle.plugin.SnykExtension> {
+    // setApi("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx") // env SNYK_TOKEN
+    setSeverity("high")
+    setAutoDownload(true)
+    setAutoUpdate(true)
+    setArguments("--all-sub-projects")
 }
 
 group = "io.slugstack.oss"
