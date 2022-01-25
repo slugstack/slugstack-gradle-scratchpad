@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - uses: peter-evans/s3-backup@v1
         env:
           ACCESS_KEY_ID: ${{ secrets.S3_REPOSITORY_BACKUPS_ACCESS_KEY_ID }}
