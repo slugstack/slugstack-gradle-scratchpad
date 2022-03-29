@@ -8,7 +8,7 @@ plugins {
     id("nebula.javadoc-jar") version "18.4.0"
     id("nebula.source-jar") version "18.4.0"
     id("nebula.maven-apache-license") version "18.4.0"
-    id("org.owasp.dependencycheck") version "7.0.1"
+    id("org.owasp.dependencycheck") version "7.0.2"
     id("io.snyk.gradle.plugin.snykplugin") version "0.4"
 }
 
